@@ -107,9 +107,7 @@ local ui1 = plrGui:WaitForChild("UI")
            }
         game:GetService("ReplicatedStorage").Remotes.FriskMoves:InvokeServer(unpack(args))
         wait(3)
-        Game:GetService("Players").LocalPlayer.PlayerGui.UI.Ui.ExpBar:Destroy()
-        game.Players.LocalPlayer.PlayerGui.UI.Ui.MoveDebounceShower.Moves1["1"].Position = UDim2.new(-0.95, 0, 0, 0)
-        game.Players.LocalPlayer.PlayerGui.CharaIndicator.Enabled = true
+        Game:GetService("Players").LocalPlayer.PlayerGui.UI.Ui.ExpBar:Destroy(
     end)
 --Chat
 _G.hidechat = true
