@@ -345,5 +345,106 @@ game:GetService("ReplicatedStorage").Remotes.FriskMoves:InvokeServer(unpack(args
 end            
 end)
 
+-- // 3
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(k)
+	if k == "3" then
+                              local A_1 =  {
+              [1] = getrenv()._G.Pass, 
+              [2] = "Chatted", 
+              [3] = [[[ Dark Lord ]
+Suffer a slow death!!]],
+              [4] = Color3.fromRGB(255,0,0)
+        }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+                local Anim = Instance.new("Animation")
+                Anim.AnimationId = "rbxassetid://5658856843"
+                local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                k:Play()
+                k:AdjustSpeed(1)
+                local A_1 = getrenv()._G.Pass
+				local A_2 = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+				local A_3 = 
+					{
+						["HitTime"] = 1, 
+						["Type"] = "Normal", 
+						["HitEffect"] = "KnifeHitEffect",
+						["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt2,
+						["Sound"] = game:GetService("ReplicatedStorage").Sounds.KnifeHit,
+						["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0.1 + Vector3.new(0,0.0,0), 
+						["CombatInv"] = true,
+						["Damage"] = 10
+					}
+				local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+				Event:InvokeServer(A_1, A_2, A_3)
+                Event:InvokeServer(A_1, A_2, A_3)
+                wait(0.5)
+                Event:InvokeServer(A_1, A_2, A_3)
+                Event:InvokeServer(A_1, A_2, A_3)
+                wait(0.1)
+                Event:InvokeServer(A_1, A_2, A_3)
+                wait(0.1)
+                Event:InvokeServer(A_1, A_2, A_3)
+                wait(0.1)
+                Event:InvokeServer(A_1, A_2, A_3)
+                wait(0.1)
+                local A_1 = getrenv()._G.Pass
+				local A_2 = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+				local A_3 = 
+					{
+						["HitTime"] = 1, 
+						["Type"] = "Knockback", 
+						["HitEffect"] = "KnifeHitEffect",
+						["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt2,
+						["Sound"] = game:GetService("ReplicatedStorage").Sounds.KnifeHit,
+						["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 50 + Vector3.new(0,0.0,0), 
+						["CombatInv"] = true,
+						["Damage"] = 25
+					}
+				local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+				Event:InvokeServer(A_1, A_2, A_3)
+end            
+end)
+
+-- // 4
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(k)
+	if k == "4" then
+local A_1 =  {
+              [1] = getrenv()._G.Pass, 
+              [2] = "Chatted", 
+              [3] = [[[ Dark Lord ]
+...]],
+              [4] = Color3.fromRGB(255,0,0)
+        }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+                local Anim = Instance.new("Animation")
+                Anim.AnimationId = "rbxassetid://7023918365"
+                local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                k:Play()
+                k:AdjustSpeed(1)
+                for i = 1,5 do
+                for i = 1,10,5 do 
+                local A_1 = getrenv()._G.Pass
+				local A_2 = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+				local A_3 = 
+					{
+						["HitTime"] = 1, 
+						["Type"] = "Knockback", 
+						["HitEffect"] = "KnifeHitEffect",
+						["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt2,
+						["Sound"] = game:GetService("ReplicatedStorage").Sounds.KnifeHit,
+						["Velocity"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 0 + Vector3.new(0,-0.1,0), 
+						["CombatInv"] = true,
+						["Damage"] = 40
+					}
+				local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+				Event:InvokeServer(A_1, A_2, A_3)
+                end
+                end
+                end
+                end)
 
 game.Workspace.ServerEffects.ServerCooldown:Destroy()
