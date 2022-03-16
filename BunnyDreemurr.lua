@@ -276,18 +276,6 @@ spawn(function()
         end
     until false
 end)
-
---// The Text
-game.Players.LocalPlayer.Chatted:Connect(function(Chat)
-local A_1 =  {
-          [1] = getrenv()._G.Pass, 
-          [2] = "Chatted", 
-          [3] = '[ BunnyDreemurr ]\n' ..Chat, 
-          [4] = Color3.fromRGB(255, 0, 0)
-    }
-    local Event = game:GetService("ReplicatedStorage").Remotes.Events
-    Event:FireServer(A_1)
-    end)
         
 --// 1
 local mouse = game.Players.LocalPlayer:GetMouse()
